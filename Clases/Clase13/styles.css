@@ -14,7 +14,24 @@
 body{
     font-size: 15px;
     background: var(--Very-light-gray);
+}
 
+h2{
+    padding: 20px 0;
+    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+
+p{
+    padding: 20px 0;
+    font-weight: 400;
+    font-family: 'Big Shoulders Display', cursive;
+    
+}
+
+img{
+    padding: 20px 0;
 }
 
 .container{
@@ -22,30 +39,80 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 0 0 20px;
     
 }
 
 .sedans{
     background: var(--Bright-orange);
     color: var(--Transparent-white);
-    width: 100%;
-    height: 150px;
-    padding: 20px;
+    width: 90%;
+    height: 30%;
+    padding: 20px 60px 20px 40px;
+    border-radius: 5px 5px 0 0;
+}
+.sedans button{
+    color: var(--Bright-orange);
 }
 
 .suvs{
     background: var(--Dark-cyan);
     color: var(--Transparent-white);
-    width: 100%;
-    height: 150px;
-    padding: 20px;
+    width: 90%;
+    height: 30%;
+    padding: 20px 60px 20px 40px;
+}
+
+.suvs button{
+    color: var(--Dark-cyan);
 }
 
 .luxury{
     background: var(--Very-dark-cyan);
     color: var(--Transparent-white);
-    width: 100%;
-    height: 150px;
-    padding: 20px;
+    width: 90%;
+    height: 30%;
+    padding: 20px 60px 20px 40px;
+    border-radius: 0 0 5px 5px;
 }
 
+.luxury button{
+    color: var(--Very-dark-cyan);
+}
+
+button{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .sedans{
+        height: 80%;
+        width: 30%;
+        border-radius: 5px 0 0 5px;
+    }
+    .suvs{
+        height: 80%;
+        width: 30%;
+        
+    }
+    .luxury{
+        height: 80%;
+        width: 30%;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    
+}
